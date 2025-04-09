@@ -35,7 +35,7 @@ st.dataframe(df, use_container_width=True)
 # Resumo
 total_voce = df[df["Responsável"] == "Você"]["Valor"].sum()
 total_esposa = df[df["Responsável"] == "Esposa"]["Valor"].sum()
-st.markdown(f"**Total Você:** R$ {total_voce:.2f} | **Total Esposa:** R$ {total_esposa:.2f}")
+st.markdown(f"Total Você: R$ {total_voce:.2f} | Total Esposa: R$ {total_esposa:.2f}")
 
 # Formulário para adicionar compra
 with st.form("add_form"):
