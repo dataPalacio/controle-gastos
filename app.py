@@ -13,8 +13,7 @@ st.title("💳 Controle de Gastos Compartilhados")
 LIMITE_VOCE = 2000.00
 LIMITE_ESPOSA = 1500.00
 
-# Cache de dados
-@st.cache_data
+# Carregar dados (sem cache para refletir atualizações em tempo real)
 def carregar_compras():
     return listar_compras(cursor)
 
